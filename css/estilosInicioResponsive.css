@@ -27,6 +27,14 @@ ul a {
     margin-right: 5px;
     text-decoration-line: none;
 }
+div ul a {
+    transition: all 1s;
+}
+div ul a:hover {
+    opacity: 0.5;
+    border: black solid 3px;
+}
+   
 /*      Main      */
 .marginTitle {
 	margin-top: 15px;
@@ -36,13 +44,28 @@ ul a {
 	text-align: center;
     color: darkblue;
 }  
+.titleMovement {
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+}
+@keyframes title {
+    from {
+        transform: translate(-1000px);
+    }
+    to {
+        transform: translate(0.5fr);
+    }
+}
 .backgroundRoyalBlue {
-	background-color: steelblue;
+	background-color: royalblue;
+    background-image: linear-gradient(to bottom right, rgb(207, 212, 243) , rgb(33, 120, 235));
 }
 .imgLocker{
 	background-image: url("../img/fondoLocker.jpg");
 	background-position: center top;
 	background-size: cover;
+   
 }
 .interLine{
     line-height: 1.8;

@@ -27,6 +27,13 @@ ul a {
     margin-right: 5px;
     text-decoration-line: none;
 }
+div ul a {
+    transition: all 1s;
+}
+div ul a:hover {
+    opacity: 0.5;
+    border: black solid 3px;
+}
 /*      Main      */
 .marginTitle {
 	margin-top: 15px;
@@ -36,6 +43,19 @@ ul a {
 	text-align: center;
     color: darkblue;
 }  
+.titleMovement {
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes title {
+    from {
+        transform: translate(-800px);
+    }
+    to {
+        transform: translate(0.5fr);
+    }
+}
 .titleTypeLocker {
     background-color: steelblue;
     color: white;
@@ -53,8 +73,32 @@ ul a {
 	text-align-last:center;
 	text-align: justify;
 }
-
-
+.title1Movement {
+    animation-name: title1;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes title1 {
+    from {
+        transform: translate(1000px);
+    }
+    to {
+        transform: translate(0.1fr);
+    }
+}  
+.title2Movement {
+    animation-name: title2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+@keyframes title2 {
+    from {
+        transform: translate(-700px);
+    }
+    to {
+        transform: translate(1fr);
+    }
+}  
 
 /*   Footer   */
 .backLightGreen {
@@ -103,6 +147,7 @@ ul a {
 			align-content: center;
 			justify-content: center;
 			padding-top: 10%;
+            opacity: 0.8;
 		}
       .text1Grid { grid-area: text1; }
       .title3Grid { grid-area: title3; }
@@ -111,6 +156,7 @@ ul a {
 		  	grid-area: image2; 
 			text-align: center;
 			padding-top: 10%;
+            opacity: 0.8;
 		}
       .footerGrid { grid-area: footer1; }
       
@@ -167,6 +213,7 @@ ul a {
 			padding-top: 5%;
 			width: 100%;
 			height:fit-content;
+            opacity: 0.8;
 		}
       .text1Grid { grid-area: text1; }
       .title3Grid { grid-area: title3; }
@@ -177,6 +224,7 @@ ul a {
 			padding-top: 5%;
 			width: 100%;
 			height: fit-content;
+            opacity: 0.8;
 		}
       .footerGrid { grid-area: footer1; }
     /*   Cambios en Logo  */
@@ -236,6 +284,7 @@ ul a {
 			padding-top: 5%;
 			width: 100%;
 			height:fit-content;
+            opacity: 0.8;
 		}
       .text1Grid { grid-area: text1; }
       .title3Grid { grid-area: title3; }
@@ -246,6 +295,7 @@ ul a {
 			padding-top: 5%;
 			width: 100%;
 			height: fit-content;
+            opacity: 0.8;
 		}
       .footerGrid { grid-area: footer1; }
     /*   Cambios en Logo  */
